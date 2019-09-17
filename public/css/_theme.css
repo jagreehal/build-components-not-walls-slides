@@ -94,8 +94,8 @@ body {
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%;
+  @apply m-auto;
+  max-width: 100%;
 }
 
 .reveal strong,
@@ -162,8 +162,8 @@ body {
   background-image: url(../favicon-32x32.png);
 }
 
-.reveal ul ul {
-  list-style-type: square;
+.reveal li ul {
+  @apply mt-8;
 }
 
 .reveal ul ul ul {
@@ -214,6 +214,7 @@ body {
 .reveal code {
   font-family: monospace;
   text-transform: none;
+  @apply text-sm;
 }
 
 .reveal pre code {
@@ -290,7 +291,7 @@ body {
 
 .reveal a:hover {
   @apply text-blue-600 underline;
-  
+
   border: none;
 }
 
