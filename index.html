@@ -46,7 +46,30 @@
         </section>
         <section>
           <h2>
-            Two of the biggest changes in web development...
+            I'm Jag Reehal
+          </h2>
+          <ul>
+            <li>
+              Contractor living in Cambridge
+            </li>
+            <li>
+              Clients include Arm, Compare The Market, Cambridge Assessment,
+              Ford, Reed Elsevier and Cambridge University Press
+            </li>
+            <li>
+              Web developer since I graduated in 2000
+            </li>
+            <li>
+              Used loads of libraries and frameworks
+            </li>
+            <li>
+              Currently tech lead on a project using Vue and GraphQL
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>
+            Two of the biggest changes in web development
           </h2>
           <ul>
             <li>
@@ -124,7 +147,7 @@
               be lazy loadable?
             </li>
             <li>
-              be as easy to use like any other HTML element?
+              be as easy to use as an HTML element?
             </li>
           </ul>
         </section>
@@ -180,93 +203,7 @@
           </ul>
         </section>
         <section>
-          <h2>Demo - todo item</h2>
-          <div class="mb-10">
-            <ul>
-              <li>
-                <a
-                  target="blank"
-                  href="https://jag-html-examples.netlify.com/styling-examples/react.html"
-                  >React component</a
-                >
-              </li>
-              <li>
-                <a
-                  target="blank"
-                  href="https://jag-html-examples.netlify.com/styling-examples/react-styled-components.html"
-                  >React component using styled components</a
-                >
-                <div class="flex">
-                  <pre class="mr-6">
-                    <code class="javascript">
-const View = styled.div`
-  color: #4d4d4d;
-`;
-
-// used like this
-
-&lt;View&gt;
-...
-&lt;/View&gt;
-                    </code>
-                  </pre>
-
-                  <pre>
-                    <code class="html">
-.htZyQy {
-  color: #4d4d4d;
-}                      
-
-<div class="sc-bdVaJa htZyQy">
-...
-</div>
-
-
-                    </code>
-                  </pre>
-                </div>
-              </li>
-              <li>
-                <a
-                  target="blank"
-                  href="https://jag-html-examples.netlify.com/styling-examples/react-styled-components.html"
-                  >Vue SFC component</a
-                >
-                <div class="flex">
-                  <pre class="mr-6">
-                    <code class="javascript">
-const View = styled.div`
-  color: #4d4d4d;
-`;
-
-// used like this
-
-&lt;View&gt;
-...
-&lt;/View&gt;
-                    </code>
-                  </pre>
-
-                  <pre>
-                    <code class="html">
-.htZyQy {
-  color: #4d4d4d;
-}                      
-
-<div class="sc-bdVaJa htZyQy">
-...
-</div>
-
-
-                    </code>
-                  </pre>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <h2>What is a web component?</h2>
+          <h2>What about a web component?</h2>
           <ul>
             <li>
               <a
@@ -295,20 +232,21 @@ customElements.define("todo-item", TodoItem);
               >
             </li>
             <li class="line-through">HTML imports</li>
-            <li>
+            <!-- <li>
               <a
                 target="blank"
                 href="https://jag-html-examples.netlify.com/styling-examples/web-component.html"
                 >Demo</a
               >
-            </li>
+            </li> -->
           </ul>
         </section>
         <section>
           <h2>What is the Shadow Dom?</h2>
           <ul>
             <li>
-              provides 'iframe like' encapsulation hiding implementation details
+              Provides 'iframe like' encapsulation (for CSS) hiding
+              implementation details
               <pre>
   <code>
 &#x3C;ul class=&#x22;todo-list&#x22;&#x3E;
@@ -319,7 +257,7 @@ customElements.define("todo-item", TodoItem);
   </code>
 </pre>
             </li>
-            <li>or the video element!</li>
+            <li>Just like the video element!</li>
             <li>Accessible</li>
             <li>Perfect for design systems!</li>
             <li>
@@ -331,79 +269,170 @@ customElements.define("todo-item", TodoItem);
               >
             </li>
             <li>
-              Haters gonna hate -
               <a
                 target="blank"
                 href="https://medium.com/bbc-design-engineering/goodbye-iframes-6c84a651e137"
                 >BBC 'How I learnt to Stop Worrying and Love the Shadow Dom'</a
               >
             </li>
-            <li>Not JUST for web components</li>
           </ul>
         </section>
         <section>
-          <h2>Shadow Done good</h2>
-
+          <h2>Styling Components</h2>
           <ul>
             <li>
-              <a
-                target="blank"
-                href="https://jag-html-examples.netlify.com/styling-examples/web-component-shadow.html"
-                >Demo web component using shadow dom</a
-              >
+              Styling components can be done using
+              <ul>
+                <li>Regular CSS</li>
+                <li>CSS modules</li>
+                <li>CSS-in-JS</li>
+                <li>Shadow DOM</li>
+              </ul>
             </li>
             <li>
-              <a
-                target="blank"
-                href="https://jag-html-examples.netlify.com/styling-examples/web-component-shadow-themed.html"
-                >Can be themed</a
-              >
-              <pre><code class="html">
+              Let's see how they cope with class style 💣 <br />
+              and element style 👻
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>React Component using CSS</h2>
+
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/s7m2451j/embedded/result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+        </section>
+        <section>
+          <h2>React component using styled components</h2>
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/1yp47vq5/embedded/result/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <div class="flex">
+            <pre class="mr-6">
+                    <code class="javascript">
+const View = styled.div`
+  color: #4d4d4d;
+`;
+
+// used like this
+
+&lt;View&gt;
+...
+&lt;/View&gt;
+                    </code>
+                  </pre>
+
+            <pre>
+                    <code class="html">
+.htZyQy {
+  color: #4d4d4d;
+}                      
+
+<div class="sc-bdVaJa htZyQy">
+...
+</div>
+
+
+                    </code>
+                  </pre>
+          </div>
+        </section>
+        <section>
+          <h2>Shadow Dom</h2>
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/cd7eLmv3/embedded/result/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+        </section>
+        <section>
+          <h2>Themed Shadow Dom</h2>
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/fL4zj0yd/embedded/result,html/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <pre>
+            <code class="css">
 :host{
   background-color: #FFF:
 }                
-
 :host(.dark) {
   background-color: #000:
-}
-
-<the-web-component></the-web-component>
-
-<the-web-component class="dark"></the-web-component>
-          </code></pre>
-            </li>
-            <li>
-              <a
-                target="blank"
-                href="https://jag-html-examples.netlify.com/styling-examples/web-component-shadow-css-variables.html"
-                >Can be styled using CSS variables</a
-              >
-              <pre><code class="css">
-:root {
-  --variable-name: red;
-}
-
-.class-that-accepts-customisation {
-  color: var(--variable-name, 'fallback')
-}            
-         </code></pre>
-            </li>
-          </ul>
+}             
+            </code>
+          </pre>
         </section>
         <section>
-          <h2>Shadow done bad</h2>
+          <h2>CSS Variables Shadow Dom</h2>
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/oa4cebpr/embedded/result,html/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <pre>
+            <code class="css">
+:root {
+  --todo-item-background-color: orange;
+  --todo-item-color: blue;
+  --todo-destroy-color: black;
+}         
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h2>Use your own styled content using a slot</h2>
+          <iframe
+            width="100%"
+            height="450"
+            src="//jsfiddle.net/jagreehal/rceLwxpa/embedded/result,html,css/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <pre>
+            <code class="html">
+
+&#x3C;todo-item&#x3E;
+  &#x3C;slot/&#x3E;  
+&#x3C;/todo-item&#x3E;
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Shadow DOM pitfalls</h2>
           <ul>
             <li>
               Don't work well in forms... yet
             </li>
             <li>
-              Polyfills
+              Polyfills (more on this later)
             </li>
             <li>
               'all: initial' vs inherited properties
             </li>
             <li>
-              Never used the closed mode
+              Closed mode is evil
             </li>
           </ul>
         </section>
@@ -420,7 +449,12 @@ customElements.define("todo-item", TodoItem);
             <li class="text-orange-500">
               Polymer the 'flagship' for web components was awful
             </li>
-            <li class="text-yellow-500">Horrible developer experience</li>
+            <li class="text-yellow-500">
+              Horrible developer experience (<a
+                href="https://github.com/jagreehal/styling-web-component-examples/blob/master/public/styling-examples/web-component-shadow.js"
+                >example</a
+              >)
+            </li>
             <li class="text-green-500">
               All this at the time when other libraries and frameworks made
               things look simple
@@ -432,7 +466,7 @@ customElements.define("todo-item", TodoItem);
               >
             </li>
             <li>
-              Miseducation -
+              Attributes vs props confusion -
               <a
                 href="https://dev.to/richharris/why-i-don-t-use-web-components-2cia"
                 >Why I don't use web components</a
@@ -495,13 +529,15 @@ customElements.define("todo-item", TodoItem);
               <a target="blank" href="https://custom-elements-everywhere.com/"
                 >Custom Elements Everywhere</a
               >
+              checks how interoperable web components are
+
               <div class="mb-12"><img src="images/cee-angular.png" /></div>
               <div><img src="images/cee-vue.png" /></div>
             </li>
           </ul>
         </section>
         <section>
-          <h2>React</h2>
+          <h2>React 😞</h2>
           <img class="m-auto mb-12" src="images/cee-react.png" />
           <ul>
             <li>
@@ -510,6 +546,7 @@ customElements.define("todo-item", TodoItem);
                 href="https://github.com/facebook/react/issues/7901"
                 >Read the issue</a
               >
+              about why
             </li>
             <li>
               <a
@@ -558,29 +595,16 @@ customElements.define("todo-item", TodoItem);
               >
               or
               <a target="blank" href="https://github.com/matthewp/haunted"
-                >Haunted</a
+                >Haunted for a hooks like experience</a
               >
-              <div>
-                <pre>
-                  <code class="">
-<script type="module">
-  import { html } from 'https://unpkg.com/lit-html/lit-html.js';
-  import { component, useState } from 'https://unpkg.com/haunted/haunted.js';
-
-  function Counter() {
-    const [count, setCount] = useState(0);
-
-    return html`
-      <div id="count">${count}</div>
-      <button type="button" @click=${() => setCount(count + 1)}>Increment</button>
-    `;
-  }
-
-  customElements.define('my-counter', component(Counter));
-</script>
-                  </code>
-                </pre>
-              </div>
+              <iframe
+                width="100%"
+                height="450"
+                src="//jsfiddle.net/jagreehal/Lkcw80v2/embedded/html,result/"
+                allowfullscreen="allowfullscreen"
+                allowpaymentrequest
+                frameborder="0"
+              ></iframe>
             </li>
           </ul>
         </section>
@@ -667,8 +691,13 @@ export class TodoInput {
 }
             </code>
           </pre>
-          <div class="mb-12 text-xl">Just add the following</div>
-          <pre>
+        </section>
+        <section>
+          <h2>Integrating Stencil</h2>
+          <ul>
+            <li>
+              Script tags
+              <pre>
 <code>// Add the following scripts to your page
 
 <script
@@ -681,6 +710,15 @@ export class TodoInput {
     ></script>
 </code>    
   </pre>
+            </li>
+            <li>Install as an npm module</li>
+            <li>
+              Read more about
+              <a href="https://stenciljs.com/docs/overview"
+                >Framework Integration</a
+              >
+            </li>
+          </ul>
         </section>
         <section>
           <h2>Used like this in React</h2>
@@ -688,7 +726,7 @@ export class TodoInput {
             <li class="text-red-500">
               Before
               <pre>
-            <code style="max-height: none">
+            <code class="text-xs" style="max-height: none">
 const TodoInput = () =&#x3E; {
   const [textInput, onInputChange] = useState(&#x27;&#x27;);
   const { onSubmitTodo } = React.useContext(TodoStoreContext);
@@ -719,7 +757,7 @@ const TodoInput = () =&#x3E; {
             <li class="text-orange-500">
               After
               <pre>
-                <code>
+                <code class="text-xs">
 const TodoInput = () =&#x3E; {
   const { onSubmitTodo } = React.useContext(TodoStoreContext);
 
@@ -735,10 +773,10 @@ const TodoInput = () =&#x3E; {
         <section>
           <h2>Used like this in Vue</h2>
           <ul>
-            <li class="text-red-500">
+            <li>
               Before
               <pre>
-            <code>
+               <code class="text-xs">
 &#x3C;input class=&#x22;new-todo&#x22;
        autofocus
        autocomplete=&#x22;off&#x22;
@@ -748,10 +786,10 @@ const TodoInput = () =&#x3E; {
             </code>
           </pre>
             </li>
-            <li class="text-orange-500">
+            <li>
               After
               <pre>
-                <code class="javascript">
+                <code class="javascript text-xs">
 // tell Vue not to panic we know what we're doing                
 Vue.config.ignoredElements = ['todo-input'];                
 
@@ -762,6 +800,7 @@ Vue.config.ignoredElements = ['todo-input'];
         </section>
         <section>
           <h2>But is it fast?</h2>
+          <div class="mb-8">According to Lighthouse...</div>
           <ul>
             <li>
               <a
@@ -802,13 +841,13 @@ Vue.config.ignoredElements = ['todo-input'];
           </ul>
         </section>
         <section>
-          <h2>DX using web components</h2>
+          <h2>DX using Stencil web components</h2>
           <ul>
             <li>
               Intellisense
             </li>
             <li>
-              Typescript
+              Typescript (coming soon)
             </li>
             <li>
               Testing has to change from unit to E2E -
@@ -882,10 +921,13 @@ Vue.config.ignoredElements = ['todo-input'];
         <section>
           <h2>Thanks for coming!</h2>
           <ul>
-            <li class="text-red-500">It's not about vs, and building walls</li>
-            <li class="text-orange-500">It's about composable applications</li>
+            <li class="text-red-500">
+              It's about composable, collaborative UI components NOT vs.
+            </li>
+            <li class="text-orange-500">Use whatever works for you</li>
             <li class="text-yellow-500">
-              Let big frameworks and libraries fight it out
+              Grab some popcorn and watch the big frameworks and libraries fight
+              it out
               <div class="mt-8 w-6/12 m-auto">
                 <img src="images/framework-fight.gif" />
               </div>
