@@ -639,24 +639,33 @@ const View = styled.div`
         <section>
           <h2>Integrating web components</h2>
           <div class="mb-8">
-            Refactor
-            <a target="blank" href="http://todomvc.com/">TODO MVC</a> written in
-            React and Vue to use the <span class="font-bold">SAME</span> web
-            components
+            Refactor React and Vue versions of
+            <a
+              target="blank"
+              href="https://github.com/jagreehal/todo-mvc-refactor-stencil-web-components"
+              >TODO MVC</a
+            >
+            to use the
+            <span class="font-bold">SAME</span> web components
           </div>
+          <img class="m-auto" src="images/todos-refactor.png" />
           <ul>
-            <li>One component at a time</li>
-            <li>Create, test document the web component</li>
-            <li>Replace native code with web component</li>
+            <li>Replace native component with web component</li>
             <li>
               Run E2E tests using
               <a target="blank" href="https://www.cypress.io/">Cypress.io</a>
+              after each step
             </li>
-            <li>TL;DR - reduced app code, state management still the same</li>
+            <li>TL;DR - reduced code, state management still the same</li>
           </ul>
         </section>
         <section>
-          <h2>Stencil Todo Input</h2>
+          <h2>
+            <a
+              href="https://github.com/jagreehal/todo-mvc-refactor-stencil-web-components/blob/master/todo-mvc-stencil-web-components/src/components/todo-input/todo-input.tsx"
+              >Stencil Todo Input</a
+            >
+          </h2>
           <pre>
             <code style="max-height: none">
 import { Component, State, Event, EventEmitter, h } from &#x27;@stencil/core&#x27;;
@@ -702,11 +711,11 @@ export class TodoInput {
 
 <script
       type="module"
-      src="https://stencil-todo.netlify.com/stencil-todo/stencil-todo.esm.js"
+      src="https://todo-mvc-stencil-web-components.surge.sh/todo-mvc-stencil-web-components/todo-mvc-stencil-web-components.esm.js"
     ></script>
 <script
       nomodule=""
-      src="https://stencil-todo.netlify.com/stencil-todo/stencil-todo.js"
+      src="https://todo-mvc-stencil-web-components.surge.sh/todo-mvc-stencil-web-components/todo-mvc-stencil-web-components.js"
     ></script>
 </code>    
   </pre>
@@ -801,44 +810,47 @@ Vue.config.ignoredElements = ['todo-input'];
         <section>
           <h2>But is it fast?</h2>
           <div class="mb-8">According to Lighthouse...</div>
-          <ul>
-            <li>
-              <a
-                class="block mb-6"
-                target="blank"
-                href="https://todo-stencil-components.surge.sh/react/index-stencil.html"
-                >React</a
-              >
-              <div class="flex">
-                <div class="mb-6 mr-12">
-                  <h4>Before</h4>
-                  <div class="text-green-600">100</div>
+          <div class="flex">
+            <ul class="mr-48">
+              <li>
+                <a
+                  class="block mb-6"
+                  target="blank"
+                  href="https://todo-stencil-components.surge.sh/react/index-stencil.html"
+                  >React</a
+                >
+                <div class="flex">
+                  <div class="mb-6 mr-12">
+                    <h4>Before</h4>
+                    <div class="text-green-600">100</div>
+                  </div>
+                  <div>
+                    <h4>After</h4>
+                    <div class="text-green-600">100</div>
+                  </div>
                 </div>
-                <div>
-                  <h4>After</h4>
-                  <div class="text-green-600">100</div>
+              </li>
+              <li>
+                <a
+                  class="block mb-6"
+                  target="blank"
+                  href="https://todo-stencil-components.surge.sh/vue/index-stencil.html"
+                  >Vue</a
+                >
+                <div class="mt-6 flex">
+                  <div class="mb-6 mr-12">
+                    <h4>Before</h4>
+                    <div class="text-green-600">100</div>
+                  </div>
+                  <div>
+                    <h4>After</h4>
+                    <div class="text-green-600">100</div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <a
-                class="block mb-6"
-                target="blank"
-                href="https://todo-stencil-components.surge.sh/vue/index-stencil.html"
-                >Vue</a
-              >
-              <div class="mt-6 flex">
-                <div class="mb-6 mr-12">
-                  <h4>Before</h4>
-                  <div class="text-green-600">100</div>
-                </div>
-                <div>
-                  <h4>After</h4>
-                  <div class="text-green-600">100</div>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+            <img class="w-6/12" src="images/page_speed.png" />
+          </div>
         </section>
         <section>
           <h2>DX using Stencil web components</h2>
