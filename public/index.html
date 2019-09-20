@@ -149,6 +149,9 @@
             <li>
               be as easy to use as an HTML element?
             </li>
+            <li>
+              be able to be used by non-techies 🤓 without JS knowledge?
+            </li>
           </ul>
         </section>
         <section>
@@ -211,24 +214,27 @@
                 href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements"
                 >Custom elements</a
               >
-              <pre><code class="">
+              <pre class="mt-4"><code class="javsacript">// create
 class TodoItem extends HTMLElement {}
 
+// register
 customElements.define("todo-item", TodoItem);
-          </code></pre>
-            </li>
-            <li>
-              <a
-                target="blank"
-                href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM"
-                >Shadow DOM</a
-              >
+
+// use
+&#x3C;todo-item&#x3E;&#x3C;/todo-item&#x3E;</code></pre>
             </li>
             <li>
               <a
                 target="blank"
                 href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots"
                 >HTML templates</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM"
+                >Shadow DOM</a
               >
             </li>
             <li class="line-through">HTML imports</li>
@@ -244,21 +250,13 @@ customElements.define("todo-item", TodoItem);
         <section>
           <h2>What is the Shadow Dom?</h2>
           <ul>
-            <li>
+            <li class="mb-0">
               Provides 'iframe like' encapsulation (for CSS) hiding
-              implementation details
-              <pre>
-  <code>
-&#x3C;ul class=&#x22;todo-list&#x22;&#x3E;
-  &#x3C;todo-item text=&#x22;Web component using Shadow Dom&#x22;&#x3E;
-    <!-- shadow root (your code) -->
-  &#x3C;/todo-item&#x3E;
-&#x3C;/ul&#x3E;
-  </code>
-</pre>
+              implementation details ... like a native element!
+              <img src="images/video-element.png" />
             </li>
-            <li>Just like the video element!</li>
-            <li>Accessible</li>
+
+            <li>Better than an iframe e.g. accessibility, styling, etc.</li>
             <li>Perfect for design systems!</li>
             <li>
               Great for sharing -
@@ -308,7 +306,7 @@ customElements.define("todo-item", TodoItem);
           ></iframe>
         </section>
         <section>
-          <h2>React component using styled components</h2>
+          <h2>React component using CSS-in-JS</h2>
           <iframe
             width="100%"
             height="450"
@@ -362,8 +360,8 @@ const View = styled.div`
           <h2>Themed Shadow Dom</h2>
           <iframe
             width="100%"
-            height="450"
-            src="//jsfiddle.net/jagreehal/fL4zj0yd/embedded/result,html/"
+            height="250"
+            src="//jsfiddle.net/jagreehal/fL4zj0yd/1/embedded/result,html/"
             allowfullscreen="allowfullscreen"
             allowpaymentrequest
             frameborder="0"
@@ -383,8 +381,8 @@ const View = styled.div`
           <h2>CSS Variables Shadow Dom</h2>
           <iframe
             width="100%"
-            height="450"
-            src="//jsfiddle.net/jagreehal/oa4cebpr/embedded/result,html/"
+            height="250"
+            src="//jsfiddle.net/jagreehal/oa4cebpr/5/embedded/result,html/"
             allowfullscreen="allowfullscreen"
             allowpaymentrequest
             frameborder="0"
@@ -400,11 +398,11 @@ const View = styled.div`
           </pre>
         </section>
         <section>
-          <h2>Use your own styled content using a slot</h2>
+          <h2>Use your own (styled) content using a slot</h2>
           <iframe
             width="100%"
-            height="450"
-            src="//jsfiddle.net/jagreehal/rceLwxpa/embedded/result,html,css/"
+            height="250"
+            src="//jsfiddle.net/jagreehal/rceLwxpa/6/embedded/result,html,css/"
             allowfullscreen="allowfullscreen"
             allowpaymentrequest
             frameborder="0"
@@ -610,19 +608,18 @@ const View = styled.div`
         </section>
         <section>
           <h2>
-            <img class="w-12 mr-4 inline-block" src="images/stencil-logo.png" />
-            <span> Stencil</span>
+            I ♥️ Stencil
           </h2>
           <div class="flex justify-center">
             <ul class="w-5/12 mr-24">
               <li>
-                Single script tag
+                Use by adding script tag
               </li>
               <li>Dynamic polyfills</li>
               <li>Modern and legacy builds</li>
               <li>Supports IE11</li>
               <li>Tree shaking (via Rollup)</li>
-              <li>Compiler with minimal runtime</li>
+              <li>Typescript (TSX)</li>
               <li>Unit, visual and end-to-end tests</li>
             </ul>
             <ul class="w-5/12">
@@ -632,14 +629,32 @@ const View = styled.div`
               <li>Pre-rendering</li>
               <li>Typescript</li>
               <li>Built in documentation generation</li>
-              <li>Intellisense/Auto complete</li>
+              <li>Used by Ionic instead of Angular</li>
             </ul>
           </div>
         </section>
         <section>
+          <h2>The Era of Disappearing Frameworks</h2>
+          <ul>
+            <li>
+              Like Svelte, Stencil uses compilation
+              <iframe
+                class="mt-8"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qqt6YxAZoOc?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </li>
+            <li>Which results in a minimal runtime and computed bundling</li>
+          </ul>
+        </section>
+        <section>
           <h2>Integrating web components</h2>
-          <div class="mb-8">
-            Refactor React and Vue versions of
+          <div>
+            I refactored React & Vue versions of
             <a
               target="blank"
               href="https://github.com/jagreehal/todo-mvc-refactor-stencil-web-components"
@@ -648,15 +663,16 @@ const View = styled.div`
             to use the
             <span class="font-bold">SAME</span> web components
           </div>
-          <img class="m-auto" src="images/todos-refactor.png" />
+          <img class="w-5/12 mb-4 m-auto" src="images/todos-refactor.png" />
           <ul>
+            <li>Create web component, write tests and Storybook story</li>
             <li>Replace native component with web component</li>
             <li>
               Run E2E tests using
               <a target="blank" href="https://www.cypress.io/">Cypress.io</a>
               after each step
             </li>
-            <li>TL;DR - reduced code, state management still the same</li>
+            <li>TL;DR - smaller build, state management still the same</li>
           </ul>
         </section>
         <section>
@@ -704,15 +720,14 @@ export class TodoInput {
         <section>
           <h2>Integrating Stencil</h2>
           <ul>
-            <li>
+            <li class="mb-0">
               Script tags
-              <pre>
-<code>// Add the following scripts to your page
-
-<script
+              <pre class="mt-2">
+<code><script
       type="module"
       src="https://todo-mvc-stencil-web-components.surge.sh/todo-mvc-stencil-web-components/todo-mvc-stencil-web-components.esm.js"
     ></script>
+
 <script
       nomodule=""
       src="https://todo-mvc-stencil-web-components.surge.sh/todo-mvc-stencil-web-components/todo-mvc-stencil-web-components.js"
@@ -720,7 +735,17 @@ export class TodoInput {
 </code>    
   </pre>
             </li>
-            <li>Install as an npm module</li>
+            <li>
+              npm module (<a
+                target="blank"
+                href="https://github.com/jagreehal/react-stencil-dx"
+                >Stencil React Example</a
+              >)
+              <img
+                class="w-3/4 m-auto mt-4"
+                src="images/stencil-react-typescript.gif"
+              />
+            </li>
             <li>
               Read more about
               <a href="https://stenciljs.com/docs/overview"
@@ -732,21 +757,18 @@ export class TodoInput {
         <section>
           <h2>Used like this in React</h2>
           <ul>
-            <li class="text-red-500">
+            <li class="mb-0">
               Before
               <pre>
-            <code class="text-xs" style="max-height: none">
-const TodoInput = () =&#x3E; {
+            <code class="text-xs" style="max-height: none">const TodoInput = () =&#x3E; {
   const [textInput, onInputChange] = useState(&#x27;&#x27;);
   const { onSubmitTodo } = React.useContext(TodoStoreContext);
-
   const handleInputEnterPress = e =&#x3E; {
     if (e.key === &#x27;Enter&#x27;) {
       onSubmitTodo(textInput);
       onInputChange(&#x27;&#x27;);
     }
   };
-
   return (
     &#x3C;&#x3E;
       &#x3C;input
@@ -759,23 +781,20 @@ const TodoInput = () =&#x3E; {
       /&#x3E;
     &#x3C;/&#x3E;
   );
-};              
-            </code>
+};</code>
           </pre>
             </li>
-            <li class="text-orange-500">
+            <li class="mb-0">
               After
               <pre>
-                <code class="text-xs">
-const TodoInput = () =&#x3E; {
+                <code class="text-xs">const TodoInput = () =&#x3E; {
   const { onSubmitTodo } = React.useContext(TodoStoreContext);
 
   const [customElementProps, ref] = useCustomElement({
     &#x27;input-submit&#x27;: onSubmitTodo
   });
   return &#x3C;todo-input autofocus {...customElementProps} ref={ref} /&#x3E;;
-};
-</code></pre>
+};</code></pre>
             </li>
           </ul>
         </section>
@@ -859,7 +878,10 @@ Vue.config.ignoredElements = ['todo-input'];
               Intellisense
             </li>
             <li>
-              Typescript (coming soon)
+              Typescript
+            </li>
+            <li>
+              Storybook documentation using Stencil
             </li>
             <li>
               Testing has to change from unit to E2E -
@@ -920,28 +942,28 @@ Vue.config.ignoredElements = ['todo-input'];
               <li>Google</li>
             </ul>
             <ul class="w-5/12">
-              <li>Ionic</li>
               <li>Samsung</li>
               <li>Github</li>
               <li>McDonalds</li>
               <li>Coca Cola</li>
               <li>Microsoft</li>
               <li>Mixpanel</li>
+              <li>City of Boston</li>
             </ul>
           </div>
         </section>
         <section>
           <h2>Thanks for coming!</h2>
           <ul>
-            <li class="text-red-500">
+            <li>Use whatever works for you</li>
+            <li>
               It's about composable, collaborative UI components NOT vs.
             </li>
-            <li class="text-orange-500">Use whatever works for you</li>
-            <li class="text-yellow-500">
+            <li class="mb-0">
               Grab some popcorn and watch the big frameworks and libraries fight
               it out
-              <div class="mt-8 w-6/12 m-auto">
-                <img src="images/framework-fight.gif" />
+              <div class="w-6/12 m-auto">
+                <img class="m-0" src="images/framework-fight.gif" />
               </div>
             </li>
             <li class="text-blue-500">Questions?</li>
