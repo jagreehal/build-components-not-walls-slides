@@ -25,7 +25,7 @@ body {
   margin: 0;
   background: linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%);
   color: #000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 /*********************************************
@@ -193,7 +193,7 @@ body {
  *********************************************/
 /* Fixes issue in Chrome where italic fonts did not appear when printing to PDF */
 .reveal:after {
-  content: '';
+  content: "";
   font-style: italic;
 }
 
@@ -329,7 +329,7 @@ body {
 }
 .reveal .controls .controls-arrow:before,
 .reveal .controls .controls-arrow:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -415,20 +415,20 @@ body {
   -webkit-animation: bounce-down 2s 50 both ease-out;
   animation: bounce-down 2s 50 both ease-out;
 }
-.reveal .controls[data-controls-back-arrows='faded'] .navigate-left.enabled,
-.reveal .controls[data-controls-back-arrows='faded'] .navigate-up.enabled {
+.reveal .controls[data-controls-back-arrows="faded"] .navigate-left.enabled,
+.reveal .controls[data-controls-back-arrows="faded"] .navigate-up.enabled {
   opacity: 0.3;
 }
 .reveal
-  .controls[data-controls-back-arrows='faded']
+  .controls[data-controls-back-arrows="faded"]
   .navigate-left.enabled:hover,
 .reveal
-  .controls[data-controls-back-arrows='faded']
+  .controls[data-controls-back-arrows="faded"]
   .navigate-up.enabled:hover {
   opacity: 1;
 }
-.reveal .controls[data-controls-back-arrows='hidden'] .navigate-left.enabled,
-.reveal .controls[data-controls-back-arrows='hidden'] .navigate-up.enabled {
+.reveal .controls[data-controls-back-arrows="hidden"] .navigate-left.enabled,
+.reveal .controls[data-controls-back-arrows="hidden"] .navigate-up.enabled {
   opacity: 0;
   visibility: hidden;
 }
@@ -447,18 +447,18 @@ body {
   opacity: 1;
 }
 
-.reveal[data-navigation-mode='linear'].has-horizontal-slides .navigate-up,
-.reveal[data-navigation-mode='linear'].has-horizontal-slides .navigate-down {
+.reveal[data-navigation-mode="linear"].has-horizontal-slides .navigate-up,
+.reveal[data-navigation-mode="linear"].has-horizontal-slides .navigate-down {
   display: none;
 }
 
-.reveal[data-navigation-mode='linear'].has-horizontal-slides .navigate-left,
+.reveal[data-navigation-mode="linear"].has-horizontal-slides .navigate-left,
 .reveal:not(.has-vertical-slides) .controls .navigate-left {
   bottom: 1.4em;
   right: 5.5em;
 }
 
-.reveal[data-navigation-mode='linear'].has-horizontal-slides .navigate-right,
+.reveal[data-navigation-mode="linear"].has-horizontal-slides .navigate-right,
 .reveal:not(.has-vertical-slides) .controls .navigate-right {
   bottom: 1.4em;
   right: 0.5em;
@@ -495,35 +495,35 @@ body {
 }
 
 @media screen and (min-width: 500px) {
-  .reveal .controls[data-controls-layout='edges'] {
+  .reveal .controls[data-controls-layout="edges"] {
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
-  .reveal .controls[data-controls-layout='edges'] .navigate-left,
-  .reveal .controls[data-controls-layout='edges'] .navigate-right,
-  .reveal .controls[data-controls-layout='edges'] .navigate-up,
-  .reveal .controls[data-controls-layout='edges'] .navigate-down {
+  .reveal .controls[data-controls-layout="edges"] .navigate-left,
+  .reveal .controls[data-controls-layout="edges"] .navigate-right,
+  .reveal .controls[data-controls-layout="edges"] .navigate-up,
+  .reveal .controls[data-controls-layout="edges"] .navigate-down {
     bottom: auto;
     right: auto;
   }
-  .reveal .controls[data-controls-layout='edges'] .navigate-left {
+  .reveal .controls[data-controls-layout="edges"] .navigate-left {
     top: 50%;
     left: 8px;
     margin-top: -1.8em;
   }
-  .reveal .controls[data-controls-layout='edges'] .navigate-right {
+  .reveal .controls[data-controls-layout="edges"] .navigate-right {
     top: 50%;
     right: 8px;
     margin-top: -1.8em;
   }
-  .reveal .controls[data-controls-layout='edges'] .navigate-up {
+  .reveal .controls[data-controls-layout="edges"] .navigate-up {
     top: 8px;
     left: 50%;
     margin-left: -1.8em;
   }
-  .reveal .controls[data-controls-layout='edges'] .navigate-down {
+  .reveal .controls[data-controls-layout="edges"] .navigate-down {
     bottom: 8px;
     left: 50%;
     margin-left: -1.8em;
@@ -546,7 +546,7 @@ body {
 }
 
 .reveal .progress:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   height: 10px;
@@ -644,20 +644,20 @@ body {
 }
 
 /* Global transition speed settings */
-.reveal[data-transition-speed='fast'] .slides section {
+.reveal[data-transition-speed="fast"] .slides section {
   transition-duration: 400ms;
 }
 
-.reveal[data-transition-speed='slow'] .slides section {
+.reveal[data-transition-speed="slow"] .slides section {
   transition-duration: 1200ms;
 }
 
 /* Slide-specific transition speed overrides */
-.reveal .slides section[data-transition-speed='fast'] {
+.reveal .slides section[data-transition-speed="fast"] {
   transition-duration: 400ms;
 }
 
-.reveal .slides section[data-transition-speed='slow'] {
+.reveal .slides section[data-transition-speed="slow"] {
   transition-duration: 1200ms;
 }
 
@@ -720,29 +720,29 @@ body {
   backface-visibility: hidden;
 }
 
-.reveal .slides > section[data-transition='slide'].past,
-.reveal .slides > section[data-transition~='slide-out'].past,
+.reveal .slides > section[data-transition="slide"].past,
+.reveal .slides > section[data-transition~="slide-out"].past,
 .reveal.slide .slides > section:not([data-transition]).past {
   -webkit-transform: translate(-150%, 0);
   transform: translate(-150%, 0);
 }
 
-.reveal .slides > section[data-transition='slide'].future,
-.reveal .slides > section[data-transition~='slide-in'].future,
+.reveal .slides > section[data-transition="slide"].future,
+.reveal .slides > section[data-transition~="slide-in"].future,
 .reveal.slide .slides > section:not([data-transition]).future {
   -webkit-transform: translate(150%, 0);
   transform: translate(150%, 0);
 }
 
-.reveal .slides > section > section[data-transition='slide'].past,
-.reveal .slides > section > section[data-transition~='slide-out'].past,
+.reveal .slides > section > section[data-transition="slide"].past,
+.reveal .slides > section > section[data-transition~="slide-out"].past,
 .reveal.slide .slides > section > section:not([data-transition]).past {
   -webkit-transform: translate(0, -150%);
   transform: translate(0, -150%);
 }
 
-.reveal .slides > section > section[data-transition='slide'].future,
-.reveal .slides > section > section[data-transition~='slide-in'].future,
+.reveal .slides > section > section[data-transition="slide"].future,
+.reveal .slides > section > section[data-transition~="slide-in"].future,
 .reveal.slide .slides > section > section:not([data-transition]).future {
   -webkit-transform: translate(0, 150%);
   transform: translate(0, 150%);
@@ -753,29 +753,29 @@ body {
   backface-visibility: hidden;
 }
 
-.reveal .slides > section[data-transition='linear'].past,
-.reveal .slides > section[data-transition~='linear-out'].past,
+.reveal .slides > section[data-transition="linear"].past,
+.reveal .slides > section[data-transition~="linear-out"].past,
 .reveal.linear .slides > section:not([data-transition]).past {
   -webkit-transform: translate(-150%, 0);
   transform: translate(-150%, 0);
 }
 
-.reveal .slides > section[data-transition='linear'].future,
-.reveal .slides > section[data-transition~='linear-in'].future,
+.reveal .slides > section[data-transition="linear"].future,
+.reveal .slides > section[data-transition~="linear-in"].future,
 .reveal.linear .slides > section:not([data-transition]).future {
   -webkit-transform: translate(150%, 0);
   transform: translate(150%, 0);
 }
 
-.reveal .slides > section > section[data-transition='linear'].past,
-.reveal .slides > section > section[data-transition~='linear-out'].past,
+.reveal .slides > section > section[data-transition="linear"].past,
+.reveal .slides > section > section[data-transition~="linear-out"].past,
 .reveal.linear .slides > section > section:not([data-transition]).past {
   -webkit-transform: translate(0, -150%);
   transform: translate(0, -150%);
 }
 
-.reveal .slides > section > section[data-transition='linear'].future,
-.reveal .slides > section > section[data-transition~='linear-in'].future,
+.reveal .slides > section > section[data-transition="linear"].future,
+.reveal .slides > section > section[data-transition~="linear-in"].future,
 .reveal.linear .slides > section > section:not([data-transition]).future {
   -webkit-transform: translate(0, 150%);
   transform: translate(0, 150%);
@@ -785,76 +785,76 @@ body {
  * CONVEX TRANSITION
  * Aliased 'default' for backwards compatibility
  *********************************************/
-.reveal .slides section[data-transition='default'].stack,
+.reveal .slides section[data-transition="default"].stack,
 .reveal.default .slides section.stack {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-.reveal .slides > section[data-transition='default'].past,
-.reveal .slides > section[data-transition~='default-out'].past,
+.reveal .slides > section[data-transition="default"].past,
+.reveal .slides > section[data-transition~="default-out"].past,
 .reveal.default .slides > section:not([data-transition]).past {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg)
     translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
 }
 
-.reveal .slides > section[data-transition='default'].future,
-.reveal .slides > section[data-transition~='default-in'].future,
+.reveal .slides > section[data-transition="default"].future,
+.reveal .slides > section[data-transition~="default-in"].future,
 .reveal.default .slides > section:not([data-transition]).future {
   -webkit-transform: translate3d(100%, 0, 0) rotateY(90deg)
     translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-.reveal .slides > section > section[data-transition='default'].past,
-.reveal .slides > section > section[data-transition~='default-out'].past,
+.reveal .slides > section > section[data-transition="default"].past,
+.reveal .slides > section > section[data-transition~="default-out"].past,
 .reveal.default .slides > section > section:not([data-transition]).past {
   -webkit-transform: translate3d(0, -300px, 0) rotateX(70deg)
     translate3d(0, -300px, 0);
   transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0);
 }
 
-.reveal .slides > section > section[data-transition='default'].future,
-.reveal .slides > section > section[data-transition~='default-in'].future,
+.reveal .slides > section > section[data-transition="default"].future,
+.reveal .slides > section > section[data-transition~="default-in"].future,
 .reveal.default .slides > section > section:not([data-transition]).future {
   -webkit-transform: translate3d(0, 300px, 0) rotateX(-70deg)
     translate3d(0, 300px, 0);
   transform: translate3d(0, 300px, 0) rotateX(-70deg) translate3d(0, 300px, 0);
 }
 
-.reveal .slides section[data-transition='convex'].stack,
+.reveal .slides section[data-transition="convex"].stack,
 .reveal.convex .slides section.stack {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-.reveal .slides > section[data-transition='convex'].past,
-.reveal .slides > section[data-transition~='convex-out'].past,
+.reveal .slides > section[data-transition="convex"].past,
+.reveal .slides > section[data-transition~="convex-out"].past,
 .reveal.convex .slides > section:not([data-transition]).past {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg)
     translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
 }
 
-.reveal .slides > section[data-transition='convex'].future,
-.reveal .slides > section[data-transition~='convex-in'].future,
+.reveal .slides > section[data-transition="convex"].future,
+.reveal .slides > section[data-transition~="convex-in"].future,
 .reveal.convex .slides > section:not([data-transition]).future {
   -webkit-transform: translate3d(100%, 0, 0) rotateY(90deg)
     translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-.reveal .slides > section > section[data-transition='convex'].past,
-.reveal .slides > section > section[data-transition~='convex-out'].past,
+.reveal .slides > section > section[data-transition="convex"].past,
+.reveal .slides > section > section[data-transition~="convex-out"].past,
 .reveal.convex .slides > section > section:not([data-transition]).past {
   -webkit-transform: translate3d(0, -300px, 0) rotateX(70deg)
     translate3d(0, -300px, 0);
   transform: translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0);
 }
 
-.reveal .slides > section > section[data-transition='convex'].future,
-.reveal .slides > section > section[data-transition~='convex-in'].future,
+.reveal .slides > section > section[data-transition="convex"].future,
+.reveal .slides > section > section[data-transition~="convex-in"].future,
 .reveal.convex .slides > section > section:not([data-transition]).future {
   -webkit-transform: translate3d(0, 300px, 0) rotateX(-70deg)
     translate3d(0, 300px, 0);
@@ -864,38 +864,38 @@ body {
 /*********************************************
  * CONCAVE TRANSITION
  *********************************************/
-.reveal .slides section[data-transition='concave'].stack,
+.reveal .slides section[data-transition="concave"].stack,
 .reveal.concave .slides section.stack {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-.reveal .slides > section[data-transition='concave'].past,
-.reveal .slides > section[data-transition~='concave-out'].past,
+.reveal .slides > section[data-transition="concave"].past,
+.reveal .slides > section[data-transition~="concave-out"].past,
 .reveal.concave .slides > section:not([data-transition]).past {
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg)
     translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
 }
 
-.reveal .slides > section[data-transition='concave'].future,
-.reveal .slides > section[data-transition~='concave-in'].future,
+.reveal .slides > section[data-transition="concave"].future,
+.reveal .slides > section[data-transition~="concave-in"].future,
 .reveal.concave .slides > section:not([data-transition]).future {
   -webkit-transform: translate3d(100%, 0, 0) rotateY(-90deg)
     translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
 }
 
-.reveal .slides > section > section[data-transition='concave'].past,
-.reveal .slides > section > section[data-transition~='concave-out'].past,
+.reveal .slides > section > section[data-transition="concave"].past,
+.reveal .slides > section > section[data-transition~="concave-out"].past,
 .reveal.concave .slides > section > section:not([data-transition]).past {
   -webkit-transform: translate3d(0, -80%, 0) rotateX(-70deg)
     translate3d(0, -80%, 0);
   transform: translate3d(0, -80%, 0) rotateX(-70deg) translate3d(0, -80%, 0);
 }
 
-.reveal .slides > section > section[data-transition='concave'].future,
-.reveal .slides > section > section[data-transition~='concave-in'].future,
+.reveal .slides > section > section[data-transition="concave"].future,
+.reveal .slides > section > section[data-transition~="concave-in"].future,
 .reveal.concave .slides > section > section:not([data-transition]).future {
   -webkit-transform: translate3d(0, 80%, 0) rotateX(70deg)
     translate3d(0, 80%, 0);
@@ -905,36 +905,36 @@ body {
 /*********************************************
  * ZOOM TRANSITION
  *********************************************/
-.reveal .slides section[data-transition='zoom'],
+.reveal .slides section[data-transition="zoom"],
 .reveal.zoom .slides section:not([data-transition]) {
   transition-timing-function: ease;
 }
 
-.reveal .slides > section[data-transition='zoom'].past,
-.reveal .slides > section[data-transition~='zoom-out'].past,
+.reveal .slides > section[data-transition="zoom"].past,
+.reveal .slides > section[data-transition~="zoom-out"].past,
 .reveal.zoom .slides > section:not([data-transition]).past {
   visibility: hidden;
   -webkit-transform: scale(16);
   transform: scale(16);
 }
 
-.reveal .slides > section[data-transition='zoom'].future,
-.reveal .slides > section[data-transition~='zoom-in'].future,
+.reveal .slides > section[data-transition="zoom"].future,
+.reveal .slides > section[data-transition~="zoom-in"].future,
 .reveal.zoom .slides > section:not([data-transition]).future {
   visibility: hidden;
   -webkit-transform: scale(0.2);
   transform: scale(0.2);
 }
 
-.reveal .slides > section > section[data-transition='zoom'].past,
-.reveal .slides > section > section[data-transition~='zoom-out'].past,
+.reveal .slides > section > section[data-transition="zoom"].past,
+.reveal .slides > section > section[data-transition~="zoom-out"].past,
 .reveal.zoom .slides > section > section:not([data-transition]).past {
   -webkit-transform: scale(16);
   transform: scale(16);
 }
 
-.reveal .slides > section > section[data-transition='zoom'].future,
-.reveal .slides > section > section[data-transition~='zoom-in'].future,
+.reveal .slides > section > section[data-transition="zoom"].future,
+.reveal .slides > section > section[data-transition~="zoom-in"].future,
 .reveal.zoom .slides > section > section:not([data-transition]).future {
   -webkit-transform: scale(0.2);
   transform: scale(0.2);
@@ -967,7 +967,7 @@ body {
 }
 
 .reveal.cube .slides section:not(.stack):before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -981,7 +981,7 @@ body {
 }
 
 .reveal.cube .slides section:not(.stack):after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 90%;
@@ -1056,7 +1056,7 @@ body {
 }
 
 .reveal.page .slides section:not(.stack):before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -1069,7 +1069,7 @@ body {
 }
 
 .reveal.page .slides section:not(.stack):after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 90%;
@@ -1119,7 +1119,7 @@ body {
 /*********************************************
  * FADE TRANSITION
  *********************************************/
-.reveal .slides section[data-transition='fade'],
+.reveal .slides section[data-transition="fade"],
 .reveal.fade .slides section:not([data-transition]),
 .reveal.fade .slides > section > section:not([data-transition]) {
   -webkit-transform: none;
@@ -1135,7 +1135,7 @@ body {
 /*********************************************
  * NO TRANSITION
  *********************************************/
-.reveal .slides section[data-transition='none'],
+.reveal .slides section[data-transition="none"],
 .reveal.none .slides section:not([data-transition]) {
   -webkit-transform: none;
   transform: none;
@@ -1287,116 +1287,116 @@ body {
   object-fit: cover;
 }
 
-.reveal .slide-background[data-background-size='contain'] video {
+.reveal .slide-background[data-background-size="contain"] video {
   -o-object-fit: contain;
   object-fit: contain;
 }
 
 /* Immediate transition style */
-.reveal[data-background-transition='none'] > .backgrounds .slide-background,
-.reveal > .backgrounds .slide-background[data-background-transition='none'] {
+.reveal[data-background-transition="none"] > .backgrounds .slide-background,
+.reveal > .backgrounds .slide-background[data-background-transition="none"] {
   transition: none;
 }
 
 /* Slide */
-.reveal[data-background-transition='slide'] > .backgrounds .slide-background,
-.reveal > .backgrounds .slide-background[data-background-transition='slide'] {
+.reveal[data-background-transition="slide"] > .backgrounds .slide-background,
+.reveal > .backgrounds .slide-background[data-background-transition="slide"] {
   opacity: 1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.reveal[data-background-transition='slide']
+.reveal[data-background-transition="slide"]
   > .backgrounds
   .slide-background.past,
 .reveal
   > .backgrounds
-  .slide-background.past[data-background-transition='slide'] {
+  .slide-background.past[data-background-transition="slide"] {
   -webkit-transform: translate(-100%, 0);
   transform: translate(-100%, 0);
 }
 
-.reveal[data-background-transition='slide']
+.reveal[data-background-transition="slide"]
   > .backgrounds
   .slide-background.future,
 .reveal
   > .backgrounds
-  .slide-background.future[data-background-transition='slide'] {
+  .slide-background.future[data-background-transition="slide"] {
   -webkit-transform: translate(100%, 0);
   transform: translate(100%, 0);
 }
 
-.reveal[data-background-transition='slide']
+.reveal[data-background-transition="slide"]
   > .backgrounds
   .slide-background
   > .slide-background.past,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.past[data-background-transition='slide'] {
+  > .slide-background.past[data-background-transition="slide"] {
   -webkit-transform: translate(0, -100%);
   transform: translate(0, -100%);
 }
 
-.reveal[data-background-transition='slide']
+.reveal[data-background-transition="slide"]
   > .backgrounds
   .slide-background
   > .slide-background.future,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.future[data-background-transition='slide'] {
+  > .slide-background.future[data-background-transition="slide"] {
   -webkit-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
 
 /* Convex */
-.reveal[data-background-transition='convex']
+.reveal[data-background-transition="convex"]
   > .backgrounds
   .slide-background.past,
 .reveal
   > .backgrounds
-  .slide-background.past[data-background-transition='convex'] {
+  .slide-background.past[data-background-transition="convex"] {
   opacity: 0;
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(-90deg)
     translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0);
 }
 
-.reveal[data-background-transition='convex']
+.reveal[data-background-transition="convex"]
   > .backgrounds
   .slide-background.future,
 .reveal
   > .backgrounds
-  .slide-background.future[data-background-transition='convex'] {
+  .slide-background.future[data-background-transition="convex"] {
   opacity: 0;
   -webkit-transform: translate3d(100%, 0, 0) rotateY(90deg)
     translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-.reveal[data-background-transition='convex']
+.reveal[data-background-transition="convex"]
   > .backgrounds
   .slide-background
   > .slide-background.past,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.past[data-background-transition='convex'] {
+  > .slide-background.past[data-background-transition="convex"] {
   opacity: 0;
   -webkit-transform: translate3d(0, -100%, 0) rotateX(90deg)
     translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0) rotateX(90deg) translate3d(0, -100%, 0);
 }
 
-.reveal[data-background-transition='convex']
+.reveal[data-background-transition="convex"]
   > .backgrounds
   .slide-background
   > .slide-background.future,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.future[data-background-transition='convex'] {
+  > .slide-background.future[data-background-transition="convex"] {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0) rotateX(-90deg)
     translate3d(0, 100%, 0);
@@ -1404,52 +1404,52 @@ body {
 }
 
 /* Concave */
-.reveal[data-background-transition='concave']
+.reveal[data-background-transition="concave"]
   > .backgrounds
   .slide-background.past,
 .reveal
   > .backgrounds
-  .slide-background.past[data-background-transition='concave'] {
+  .slide-background.past[data-background-transition="concave"] {
   opacity: 0;
   -webkit-transform: translate3d(-100%, 0, 0) rotateY(90deg)
     translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0) rotateY(90deg) translate3d(-100%, 0, 0);
 }
 
-.reveal[data-background-transition='concave']
+.reveal[data-background-transition="concave"]
   > .backgrounds
   .slide-background.future,
 .reveal
   > .backgrounds
-  .slide-background.future[data-background-transition='concave'] {
+  .slide-background.future[data-background-transition="concave"] {
   opacity: 0;
   -webkit-transform: translate3d(100%, 0, 0) rotateY(-90deg)
     translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0) rotateY(-90deg) translate3d(100%, 0, 0);
 }
 
-.reveal[data-background-transition='concave']
+.reveal[data-background-transition="concave"]
   > .backgrounds
   .slide-background
   > .slide-background.past,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.past[data-background-transition='concave'] {
+  > .slide-background.past[data-background-transition="concave"] {
   opacity: 0;
   -webkit-transform: translate3d(0, -100%, 0) rotateX(-90deg)
     translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0) rotateX(-90deg) translate3d(0, -100%, 0);
 }
 
-.reveal[data-background-transition='concave']
+.reveal[data-background-transition="concave"]
   > .backgrounds
   .slide-background
   > .slide-background.future,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.future[data-background-transition='concave'] {
+  > .slide-background.future[data-background-transition="concave"] {
   opacity: 0;
   -webkit-transform: translate3d(0, 100%, 0) rotateX(90deg)
     translate3d(0, 100%, 0);
@@ -1457,57 +1457,57 @@ body {
 }
 
 /* Zoom */
-.reveal[data-background-transition='zoom'] > .backgrounds .slide-background,
-.reveal > .backgrounds .slide-background[data-background-transition='zoom'] {
+.reveal[data-background-transition="zoom"] > .backgrounds .slide-background,
+.reveal > .backgrounds .slide-background[data-background-transition="zoom"] {
   transition-timing-function: ease;
 }
 
-.reveal[data-background-transition='zoom']
+.reveal[data-background-transition="zoom"]
   > .backgrounds
   .slide-background.past,
 .reveal
   > .backgrounds
-  .slide-background.past[data-background-transition='zoom'] {
+  .slide-background.past[data-background-transition="zoom"] {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(16);
   transform: scale(16);
 }
 
-.reveal[data-background-transition='zoom']
+.reveal[data-background-transition="zoom"]
   > .backgrounds
   .slide-background.future,
 .reveal
   > .backgrounds
-  .slide-background.future[data-background-transition='zoom'] {
+  .slide-background.future[data-background-transition="zoom"] {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0.2);
   transform: scale(0.2);
 }
 
-.reveal[data-background-transition='zoom']
+.reveal[data-background-transition="zoom"]
   > .backgrounds
   .slide-background
   > .slide-background.past,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.past[data-background-transition='zoom'] {
+  > .slide-background.past[data-background-transition="zoom"] {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(16);
   transform: scale(16);
 }
 
-.reveal[data-background-transition='zoom']
+.reveal[data-background-transition="zoom"]
   > .backgrounds
   .slide-background
   > .slide-background.future,
 .reveal
   > .backgrounds
   .slide-background
-  > .slide-background.future[data-background-transition='zoom'] {
+  > .slide-background.future[data-background-transition="zoom"] {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0.2);
@@ -1515,11 +1515,11 @@ body {
 }
 
 /* Global transition speed settings */
-.reveal[data-transition-speed='fast'] > .backgrounds .slide-background {
+.reveal[data-transition-speed="fast"] > .backgrounds .slide-background {
   transition-duration: 400ms;
 }
 
-.reveal[data-transition-speed='slow'] > .backgrounds .slide-background {
+.reveal[data-transition-speed="slow"] > .backgrounds .slide-background {
   transition-duration: 1200ms;
 }
 
@@ -1625,11 +1625,11 @@ body {
 }
 
 /* Global transition speed settings */
-.reveal.has-parallax-background[data-transition-speed='fast'] .backgrounds {
+.reveal.has-parallax-background[data-transition-speed="fast"] .backgrounds {
   transition-duration: 400ms;
 }
 
-.reveal.has-parallax-background[data-transition-speed='slow'] .backgrounds {
+.reveal.has-parallax-background[data-transition-speed="slow"] .backgrounds {
   transition-duration: 1200ms;
 }
 
@@ -1839,7 +1839,7 @@ body {
 }
 
 .reveal
-  .hljs[data-line-numbers]:not([data-line-numbers=''])
+  .hljs[data-line-numbers]:not([data-line-numbers=""])
   tr:not(.highlight-line) {
   opacity: 0.4;
 }
@@ -1933,7 +1933,7 @@ body {
   outline: none;
 }
 .reveal .speaker-notes:before {
-  content: 'Speaker notes';
+  content: "Speaker notes";
   display: block;
   margin-bottom: 10px;
   opacity: 0.5;

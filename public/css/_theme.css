@@ -6,7 +6,7 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%);
+  background: #222831;
 }
 
 .reveal {
@@ -53,7 +53,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #fff;
+  color: #eeeeee;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -63,11 +63,11 @@ body {
 }
 
 .reveal h1 {
-  @apply text-5xl;
+  @apply text-6xl;
 }
 
 .reveal h2 {
-  @apply text-4xl;
+  @apply text-5xl;
 }
 
 .reveal h3 {
@@ -127,10 +127,10 @@ body {
   position: relative;
   padding-left: 5rem;
   list-style: none;
-  @apply mb-8;
+  @apply mb-12;
 }
 
-.reveal li:nth-child(1) {
+/* .reveal li:nth-child(1) {
   @apply text-red-500;
 }
 .reveal li:nth-child(2) {
@@ -150,10 +150,10 @@ body {
 }
 .reveal li:nth-child(7) {
   @apply text-purple-500;
-}
+} */
 
 .reveal li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0.5rem;
   left: 0;
@@ -242,13 +242,13 @@ body {
   border-bottom: 1px solid;
 }
 
-.reveal table th[align='center'],
-.reveal table td[align='center'] {
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
   text-align: center;
 }
 
-.reveal table th[align='right'],
-.reveal table td[align='right'] {
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
   text-align: right;
 }
 
@@ -282,8 +282,8 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  @apply text-blue-500;
-  text-decoration: none;
+  @apply text-white;
+  text-decoration: underline;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease;
